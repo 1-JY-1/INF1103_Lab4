@@ -18,18 +18,17 @@ def load_inventory(inventory):
 
     return inventory
 
-# def save_inventory(inventory): #, product_name, quantity
+def save_inventory(inventory): #, product_name, quantity
 
 
-#     # starting_number = inventory[-1][0] + 1
-#     # inventory.append([starting_number, product_name, quantity])
+    # starting_number = inventory[-1][0] + 1
+    # inventory.append([starting_number, product_name, quantity])
 
-#     with open("inventory.txt", "w") as file:
-#         for item in inventory:
-#             file.write(f"{item[0]},{item[1]},{item[2]}\n")
+    with open("inventory.txt", "w") as file:
+        for item in inventory:
+            file.write(f"{item[0]},{item[1]},{item[2]}\n")
 
-
-#     return inventory
+    return inventory
 
 def get_product_name():
 
