@@ -9,7 +9,6 @@ inventory = functions.load_inventory(inventory)
 
 
 
-
 print("===========================================================================")
 print("Welcome to the Smart Inventory Auditor!")
 print("You can add items to the inventory or quit the program.")

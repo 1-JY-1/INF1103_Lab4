@@ -8,7 +8,6 @@ def load_inventory(inventory):
                 number = int(data[0])
                 product_name = data[1]
                 quantity = int(data[2])
-                print("Once")
                 inventory.append([number, product_name, quantity])
 
     except FileNotFoundError:
@@ -75,7 +74,7 @@ def get_product_quantity(inventory, rejectedEntries, product_name):
             else:
                 numAmount, inventory, rejectedEntries = process_delivery_amount(numAmount, inventory, int(amount), rejectedEntries, product_name)
 
-                print(numAmount)
+                # print(numAmount)
 
                 if numAmount == True:
                     return False, int(amount), inventory, rejectedEntries
@@ -134,6 +133,7 @@ def process_delivery_amount(numAmount, inventory, added_value, rejectedEntries, 
     else:
         print("===========================================================================")
         print("\nNew order Added:")
+        # print(inventory)
         print(inventory[-1][0] + 1 , ", " , product_name, ", ", added_value)
         print(f"Added {added_value} items.") #New inventory: {inventory}
         calculate_tax(added_value)
