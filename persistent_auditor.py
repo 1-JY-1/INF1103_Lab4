@@ -1,9 +1,14 @@
 import functions
 
 
-toQuit = False;
+toQuit = False
 rejectedEntries = 0
 current_inventory = 0
+# inventory = []
+# inventory = functions.load_inventory(inventory)
+# print("Inventory:", inventory)
+# print(inventory[-1][0])
+
 
 
 
@@ -24,7 +29,7 @@ while toQuit == False:
 
     user_input = input("Your choice: ")
 
-    toQuit, current_inventory, rejectedEntries = functions.get_valid_input(user_input, current_inventory, rejectedEntries)
+    toQuit, inventory, rejectedEntries = functions.get_valid_input(user_input, inventory, rejectedEntries)
 
     # print("Toquit:", toQuit)
     # print("Inventory:", current_inventory)
