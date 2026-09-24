@@ -4,10 +4,8 @@ import functions
 toQuit = False
 rejectedEntries = 0
 current_inventory = 0
-# inventory = []
-# inventory = functions.load_inventory(inventory)
-# print("Inventory:", inventory)
-# print(inventory[-1][0])
+inventory = []
+inventory = functions.load_inventory(inventory)
 
 
 
